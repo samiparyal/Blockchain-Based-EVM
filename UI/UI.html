@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .header-topic {
+            text-align: center;
+            color: #086d6e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .vote-section {
+            margin-top: 20px;
+        }
+        .PartyA {
+            background-color: #18e15b;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .PartyB {
+            background-color: #de5612;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .PartyC {
+            background-color: #24f2f9;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.0/web3.min.js"></script>
+</head>
+<body>
+    <div class="header-topic">Election Result @ Blockchain based ElectronicVotingMachine Project KU</div>
+    <div class="container">
+        <h1>Live Vote Count</h1>
+        <div class="vote-section">
+            <div class="PartyA">
+                <h2>PartyA</h2>
+                <p id="voteCountPartyA">Loading...</p>
+            </div>
+            <div class="PartyB">
+                <h2>PartyB</h2>
+                <p id="voteCountPartyB">Loading...</p>
+            </div>
+            <div class="PartyC">
+                <h2>PartyC</h2>
+                <p id="voteCountPartyC">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
