@@ -8,10 +8,10 @@ This is my 3rd year (EEE) engineering project. It introduces a novel approach to
 
 3. Download this entire repository
     --> Clone or download the project files to your Raspberry Pi:
-      '''
+      ```
        git clone https://github.com/samiparyal/Blockchain-Based-EVM
        cd <project-folder>
-      '''
+      ```
 4. Connect the Hardware
     --> LCD Display with I2C module (I've use ZHD 16*2 module)
     --> Any Fingerprint Sensor via UART TX/RX (recommended: 8 pin za650_m5)
@@ -26,28 +26,29 @@ This is my 3rd year (EEE) engineering project. It introduces a novel approach to
 6. Compile the Smart Contract with Truffle
     --> Make sure you're in your project folder
     --> Compile the contract:
-        '''
+        ```
           truffle compile
-         '''
-7. Deploy the Contract to Ganache
-       '''
+       ```
+   
+8. Deploy the Contract to Ganache
+      ```
         truffle migrate --reset
-       '''
-8. Copy the new contract address from the output
-9. Update it in:
+      ```
+9. Copy the new contract address from the output
+10. Update it in:
     --> evm_v2.py (Python backend script)
     --> app.js (JavaScript frontend)
 
-10. Test the Python Voting System:
+11. Test the Python Voting System:
     --> Configure Pi Os on your raspberry first
     --> Open your Raspberry environment on Putty or RealVNC
     --> Activate your virtual environment:
-    '''
+    ```
         source myenv/bin/activate
-    '''
-11. Run the script:
-    '''
+    ```
+12. Run the script:
+    ```
     python3 evm_v2.py
-    '''
-12. Try authenticating a finger and casting a vote (Make sure to enroll voters using enroll_fingerprint.py beforehand)
-13. View Results in the Browser by opening UI.Html
+    ```
+13. Try authenticating a finger and casting a vote (Make sure to enroll voters using enroll_fingerprint.py beforehand)
+14. View Results in the Browser by opening UI.Html
