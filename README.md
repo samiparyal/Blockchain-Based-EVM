@@ -32,7 +32,7 @@ This is my 3rd year (EEE) engineering project. It introduces a novel approach to
    
 8. Deploy the Contract to Ganache
       ```
-        truffle migrate --reset
+          truffle migrate --reset
       ```
 9. Copy the new contract address from the output
 10. Update it in:
@@ -48,7 +48,7 @@ This is my 3rd year (EEE) engineering project. It introduces a novel approach to
     ```
 12. Run the script:
     ```
-    python3 evm_v2.py
+        python3 evm_v2.py
     ```
 13. Try authenticating a finger and casting a vote (Make sure to enroll voters using enroll_fingerprint.py beforehand)
 14. View Results in the Browser by opening UI.Html
