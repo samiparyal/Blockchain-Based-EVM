@@ -44,11 +44,13 @@ This is my 3rd year (EEE) engineering project. It introduces a novel approach to
     --> Open your Raspberry environment on Putty or RealVNC
     --> Activate your virtual environment:
     ```
+        python3 -m venv myenv
         source myenv/bin/activate
     ```
-12. Run the script:
+    --> Download all the necessary libraries inside your environment
+13. Run the script:
     ```
         python3 evm_v2.py
     ```
-13. Try authenticating a finger and casting a vote (Make sure to enroll voters using enroll_fingerprint.py beforehand)
-14. View Results in the Browser by opening UI.Html
+14. Try authenticating a finger and casting a vote (Make sure to enroll voters using enroll_fingerprint.py beforehand)
+15. View Results in the Browser by opening UI.Html
