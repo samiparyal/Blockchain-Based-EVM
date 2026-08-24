@@ -4,7 +4,7 @@ This is my 3rd year (EEE) engineering project. It introduces a novel approach to
 ## How To Run this?
 1. Get a Raspberry Pi
     --> A Raspberry Pi (preferably 3 or 4) is recommended.
-    --> You can use other microcontrollers, but they must support Python, GPIO, and Web3 interaction (via web3.py).
+    --> You can use microcontrollers too, but they must support Python, and Web3 interaction (via web3.py).
 
 3. Download this entire repository
     --> Clone or download the project files to your Raspberry Pi:
